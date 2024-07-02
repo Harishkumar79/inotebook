@@ -33,7 +33,7 @@ function App() {
     <>
       <NoteState>
         <Router>
-          <Navbar/>
+          <Navbar showAlert={showAlert}/>
           <Alert alert={alert}/>
           <div className="container my-3">
             <Routes>
