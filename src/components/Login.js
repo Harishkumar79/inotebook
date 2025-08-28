@@ -45,7 +45,7 @@ const Login = (props) => {
                     <label htmlFor="exampleInputPassword1">Password</label>
                     <input type="password" className="form-control my-2" id="password" name='password' value={credentials.password} placeholder="Password" autoComplete="current-password" onChange={onChanges} />
                 </div>
-                <button type="submit" disabled = {credentials.email == "" || credentials.password == "" } className="btn btn-primary my-2">Submit</button>
+                <button type="submit" disabled = {credentials.email === "" || credentials.password === "" } className="btn btn-primary my-2">Submit</button>
             </form>
         </div>
     )
